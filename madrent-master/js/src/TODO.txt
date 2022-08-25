@@ -1,0 +1,21 @@
+TODO LIST
+
+1. Play Again!                          /?
+2. Fire Anchor                          //
+3. Detect collision                     //
+4. Implement shop
+5. Add sounds at hit                    //
+6. Days...                              //
+7. Settings                             //
+8. Score system                         //
+9. Random generate gold,misc pos
+10. gameLoop id returning frame No. 
+11. Max ScoreBoard nodes limit          //
+12. Remove not used line at anchor
+13. Correct hit detection at diamonds   /? 
+14. Animation                           //
+15. Diamond, gameOver sound             //
+16. QuadraticCurve buttons
+17. Make sound buttons to toggle mode
+18. Animation of the achieved day
+19. Destroy sounds after they end

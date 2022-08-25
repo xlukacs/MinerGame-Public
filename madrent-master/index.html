@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Epic Gold Minder</title>
+    <link rel="stylesheet" href="style/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Balthazar&display=swap" rel="stylesheet">
+    <link href="style/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="gameArea"></canvas>
+    <div class="instructions" style="display: none;">
+        <p>Controls</p>
+        <ul>
+            <li>
+                <p>LEFT / RIGHT</p><img src="assets/img/buttonPair.png" alt="left/right keys">
+            </li>
+            <li>
+                <p>SHOOT ANCHOR</p><img src="assets/img/spaceButton.png" alt="space key">
+            </li>
+            <li>
+                <p>USE ITEM</p><img src="assets/img/enterButton.png" alt="enter key">
+            </li>
+            <li id="placeholder">
+                <!-- Placeholder for buttons created in JS -->
+                <div onclick="playSounds()"></div>
+                <div id="offSound" onclick="stopSounds()"></div>
+            </li>
+        </ul>
+    </div>
+    <script src="js/src/main.js" type="module"></script>
+    <script src="js/src/helpers/functions.js" type="module"></script>
+</body>
+
+</html>

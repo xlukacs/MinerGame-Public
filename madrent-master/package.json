@@ -1,0 +1,13 @@
+{
+  "name": "jsGame",
+  "version": "1.0.0",
+  "description": "This repo contains my adoptation of the game GoldMiner created in ES2018.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bence Mark Lukacs",
+  "license": "ISC"
+}
