@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy the game files to nginx's default serving directory
-COPY . /usr/share/nginx/html/
+COPY ./madrent-master /usr/share/nginx/html/
 
 RUN rm /etc/nginx/conf.d/default.conf
 
