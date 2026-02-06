@@ -3,9 +3,11 @@ services:
     image: madrent/miner_game:latest
     container_name: miner_game
     restart: unless-stopped
+    ports:
+      - "80:3001"
     networks:
       - tunnel
-      
+
   cloudflared:
     image: cloudflare/cloudflared:latest
     container_name: miner_game_cloudflared
