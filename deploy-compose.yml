@@ -1,0 +1,23 @@
+services:
+  miner_game:
+    image: madrent/miner_game:latest
+    container_name: miner_game
+    restart: unless-stopped
+    networks:
+      - tunnel
+      
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: miner_game_cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${CLOUDFLARE_TUNNEL_TOKEN}
+    depends_on:
+      - miner_game
+    networks:
+      - tunnel
+
+networks:
+  tunnel:
+    driver: bridge
