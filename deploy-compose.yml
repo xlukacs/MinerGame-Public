@@ -3,8 +3,8 @@ services:
     image: madrent/miner_game:latest
     container_name: miner_game
     restart: unless-stopped
-    ports:
-      - "80:3001"
+    expose:
+      - "3001"
     networks:
       - tunnel
 
