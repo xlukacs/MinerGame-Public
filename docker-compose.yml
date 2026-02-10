@@ -1,0 +1,7 @@
+services:
+  miner_game:
+    build: .
+    container_name: miner_game
+    restart: unless-stopped
+    ports:
+      - "80:3001"
